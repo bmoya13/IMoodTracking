@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    @IBAction func nextViewButtonPressed(_ sender: Any) {
+    @IBAction func getStartedButton(_ sender: Any) {
         
         self.performSegue(withIdentifier: "mainMenuSegue", sender: self)
         

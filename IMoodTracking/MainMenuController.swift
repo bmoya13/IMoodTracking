@@ -8,9 +8,13 @@
 import UIKit
 
 class MainMenuController: UIViewController {
-    @IBAction func getStartedPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "mainMenuSegue", sender: self)
+    
+    @IBAction func logMoodButton(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "logMoodSegue", sender: self)
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
