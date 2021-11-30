@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class LogMoodController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

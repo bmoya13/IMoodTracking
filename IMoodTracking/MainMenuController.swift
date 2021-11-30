@@ -7,23 +7,15 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    
-    @IBAction func nextViewButtonPressed(_ sender: Any) {
-        
+class MainMenuController: UIViewController {
+    @IBAction func getStartedPressed(_ sender: Any) {
         self.performSegue(withIdentifier: "mainMenuSegue", sender: self)
-        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        print("View has loaded :)")
-        
     }
-    
-    
 
 
 }
