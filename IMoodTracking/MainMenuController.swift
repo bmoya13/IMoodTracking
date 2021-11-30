@@ -14,6 +14,10 @@ class MainMenuController: UIViewController {
         self.performSegue(withIdentifier: "logMoodSegue", sender: self)
     }
     
+    @IBAction func tipScreenButton(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "tipScreenSegue", sender: self)
+    }
     
     
     override func viewDidLoad() {

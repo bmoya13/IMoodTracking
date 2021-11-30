@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f44-w7-k4B">
-                                <rect key="frame" x="150" y="433" width="114" height="40"/>
+                                <rect key="frame" x="149.5" y="433" width="115" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
@@ -72,7 +73,7 @@
                                     <constraint firstAttribute="height" constant="30" id="zjd-Ik-7jc"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Amazing"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25y-rh-F6M">
                                 <rect key="frame" x="132" y="489.5" width="150" height="30"/>
@@ -81,7 +82,7 @@
                                     <constraint firstAttribute="height" constant="30" id="gKL-Dl-FH7"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemTealColor"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Good"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-Dw-pLW">
                                 <rect key="frame" x="132" y="527.5" width="150" height="30"/>
@@ -90,7 +91,7 @@
                                     <constraint firstAttribute="width" constant="150" id="ihn-eb-cO8"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="So-So"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7R-ow-SDd">
                                 <rect key="frame" x="132" y="565.5" width="150" height="30"/>
@@ -99,7 +100,7 @@
                                     <constraint firstAttribute="height" constant="30" id="qKn-Nd-d5l"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Meh"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Moody Here!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIa-Qi-NSy">
                                 <rect key="frame" x="118.5" y="356.5" width="177" height="29"/>
@@ -114,7 +115,7 @@
                                     <constraint firstAttribute="width" constant="150" id="fNa-vs-wUv"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Horrible"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xsc-Vb-fZB"/>
@@ -140,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXI-qK-WRI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="143"/>
+            <point key="canvasLocation" x="1512" y="87"/>
         </scene>
         <!--Main Menu Controller-->
         <scene sceneID="gtt-PK-8po">
@@ -167,7 +168,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="O6T-vB-7g4"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Log Mood"/>
                                 <connections>
                                     <action selector="logMoodButton:" destination="mJn-wt-bnM" eventType="touchUpInside" id="Byt-Sb-i5o"/>
                                 </connections>
@@ -177,14 +178,17 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="t3Z-on-QZj"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="View Mood"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twl-EX-oHM">
                                 <rect key="frame" x="107" y="460" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="vK7-O0-ycW"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Mood improvement tips"/>
+                                <connections>
+                                    <action selector="tipScreenButton:" destination="mJn-wt-bnM" eventType="touchUpInside" id="pKS-oJ-52N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NNh-Z7-Z6b"/>
@@ -205,11 +209,73 @@
                     <navigationItem key="navigationItem" id="k5X-ob-SNb"/>
                     <connections>
                         <segue destination="KTe-6R-s9J" kind="show" identifier="logMoodSegue" id="5yI-Pw-c7I"/>
+                        <segue destination="RPD-tw-yhK" kind="show" identifier="tipScreenSegue" id="dxN-jv-hax"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WtS-qz-fMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="679.71014492753625" y="67.633928571428569"/>
+        </scene>
+        <!--Tip Screen Controller-->
+        <scene sceneID="tzr-dW-Afu">
+            <objects>
+                <viewController id="RPD-tw-yhK" customClass="TipScreenController" customModule="IMoodTracking" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CiU-h3-Ex5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just some tips for you  to get you through your day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfe-Dk-X47">
+                                <rect key="frame" x="66" y="192.5" width="282.5" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6r-9e-cTe">
+                                <rect key="frame" x="195" y="300" width="24" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-VO-agL" userLabel="tipNumber">
+                                <rect key="frame" x="192.5" y="331" width="29.5" height="29"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tipNumber" label="tipNumber"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip goes here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZv-ew-uEb" userLabel="tipText">
+                                <rect key="frame" x="82" y="511.5" width="250" height="19.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tipText" label="tipText"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="2d3-QT-aiC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c2K-xC-UvR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tfe-Dk-X47" firstAttribute="centerY" secondItem="CiU-h3-Ex5" secondAttribute="centerY" constant="-200" id="5ap-TZ-w6y"/>
+                            <constraint firstItem="GZv-ew-uEb" firstAttribute="centerY" secondItem="CiU-h3-Ex5" secondAttribute="centerY" constant="100" id="A7s-c3-eLR"/>
+                            <constraint firstItem="i6r-9e-cTe" firstAttribute="top" secondItem="Tfe-Dk-X47" secondAttribute="bottom" constant="50" id="BrC-mk-R0z"/>
+                            <constraint firstItem="i6r-9e-cTe" firstAttribute="centerX" secondItem="CiU-h3-Ex5" secondAttribute="centerX" id="OmV-Oq-ijE"/>
+                            <constraint firstItem="Tfe-Dk-X47" firstAttribute="centerX" secondItem="CiU-h3-Ex5" secondAttribute="centerX" id="W1f-wa-SbV"/>
+                            <constraint firstItem="AL3-VO-agL" firstAttribute="centerX" secondItem="CiU-h3-Ex5" secondAttribute="centerX" id="bsO-mY-H8C"/>
+                            <constraint firstItem="AL3-VO-agL" firstAttribute="top" secondItem="i6r-9e-cTe" secondAttribute="bottom" constant="10" id="f8t-f1-7W9"/>
+                            <constraint firstItem="GZv-ew-uEb" firstAttribute="centerX" secondItem="CiU-h3-Ex5" secondAttribute="centerX" id="pAz-Dm-oXM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="084-vr-YbX"/>
+                    <connections>
+                        <outlet property="tipNumber" destination="AL3-VO-agL" id="Qfo-Uu-r0T"/>
+                        <outlet property="tipText" destination="GZv-ew-uEb" id="mDm-fV-ECC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keV-cM-wEH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680" y="842"/>
         </scene>
     </scenes>
     <resources>
@@ -226,7 +292,7 @@
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
