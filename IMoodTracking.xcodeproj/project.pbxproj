@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4F98D727583D8900CF2229 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4F98D627583D8800CF2229 /* UserDefaults+.swift */; };
 		0E6E252427557E1C00114368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6E252327557E1C00114368 /* AppDelegate.swift */; };
 		0E6E252627557E1C00114368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6E252527557E1C00114368 /* SceneDelegate.swift */; };
 		0E6E252827557E1C00114368 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6E252727557E1C00114368 /* HomeViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E4F98D627583D8800CF2229 /* UserDefaults+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UserDefaults+.swift"; path = "../../../Downloads/Resources/UserDefaults+.swift"; sourceTree = "<group>"; };
 		0E6E252027557E1C00114368 /* IMoodTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMoodTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E6E252327557E1C00114368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E6E252527557E1C00114368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		0E6E252227557E1C00114368 /* IMoodTracking */ = {
 			isa = PBXGroup;
 			children = (
+				0E4F98D627583D8800CF2229 /* UserDefaults+.swift */,
 				0E6E252327557E1C00114368 /* AppDelegate.swift */,
 				0E6E252527557E1C00114368 /* SceneDelegate.swift */,
 				0E6E252727557E1C00114368 /* HomeViewController.swift */,
@@ -269,6 +272,7 @@
 			files = (
 				0E6E2554275587B900114368 /* LogMoodController.swift in Sources */,
 				0E6E252827557E1C00114368 /* HomeViewController.swift in Sources */,
+				0E4F98D727583D8900CF2229 /* UserDefaults+.swift in Sources */,
 				0E6E252427557E1C00114368 /* AppDelegate.swift in Sources */,
 				0E6E252627557E1C00114368 /* SceneDelegate.swift in Sources */,
 				7CA6C4432755A40200C90DDB /* MainMenuController.swift in Sources */,

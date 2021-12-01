@@ -8,7 +8,7 @@
 import UIKit
 
 
-class Mood {
+struct Mood: Codable {
     var mood: String
     var time: String
     
@@ -24,12 +24,26 @@ class LogMoodController: UIViewController {
     @IBAction func amazingButtonPressed(_ sender: Any) {
         print("Test")
         
-        var moodLog = Mood(moodInput: "Happy", timeInput: getDate())
-        print(moodLog.mood + ", " + moodLog.time)
+        let moodLog = Mood(moodInput: "Happy", timeInput: getDate())
         
-        let str = moodLog.mood + "," + moodLog.time
+        do {
+            try UserDefaults.standard.setObject(moodLog, forKey: "dayMood")
+        } catch {
+            print(error.localizedDescription)
+        }
         
-        writeToFile(input: str) // call function to write to file
+        do {
+            let moodOne = try UserDefaults.standard.getObject(forKey: "dayMood", castTo: Mood.self)
+            print(moodOne)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        //print(moodLog.mood + ", " + moodLog.time)
+        
+        //let str = moodLog.mood + "," + moodLog.time
+        
+        //writeToFile(input: str) // call function to write to file
         
     }   // end amazingButtonPressed
     
