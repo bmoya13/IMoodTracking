@@ -24,15 +24,65 @@ class LogMoodController: UIViewController {
     @IBAction func amazingButtonPressed(_ sender: Any) {
         print("Test")
         
-        let timeofUse = getDate()
-        var moodLog = Mood(moodInput: "Happy", timeInput: timeofUse)
+        var moodLog = Mood(moodInput: "Happy", timeInput: getDate())
         print(moodLog.mood + ", " + moodLog.time)
         
         let str = moodLog.mood + "," + moodLog.time
         
         writeToFile(input: str) // call function to write to file
         
-    }
+    }   // end amazingButtonPressed
+    
+    @IBAction func goodButtonPressed(_ sender: Any) {
+        print("Test")
+        
+        var moodLog = Mood(moodInput: "Good", timeInput: getDate())
+        print(moodLog.mood + ", " + moodLog.time)
+        
+        let str = moodLog.mood + "," + moodLog.time
+        
+        writeToFile(input: str) // call function to write to file
+        
+    }   // end goodButtonPressed
+    
+    @IBAction func SoSoButtonPressed(_ sender: Any) {
+        
+        print("Test")
+        
+        var moodLog = Mood(moodInput: "So-So", timeInput: getDate())
+        print(moodLog.mood + ", " + moodLog.time)
+        
+        let str = moodLog.mood + "," + moodLog.time
+        
+        writeToFile(input: str) // call function to write to file
+    }   // end SoSoButtonPressed
+    
+    @IBAction func mehButtonPressed(_ sender: Any) {
+        
+        print("Test")
+        
+        var moodLog = Mood(moodInput: "Meh", timeInput: getDate())
+        print(moodLog.mood + ", " + moodLog.time)
+        
+        let str = moodLog.mood + "," + moodLog.time
+        
+        writeToFile(input: str) // call function to write to file
+    }   // end mehButtonPressed
+    
+    
+    @IBAction func horribleButtonPressed(_ sender: Any) {
+        
+        print("Test")
+        
+        var moodLog = Mood(moodInput: "Horrible", timeInput: getDate())
+        print(moodLog.mood + ", " + moodLog.time)
+        
+        let str = moodLog.mood + "," + moodLog.time
+        
+        writeToFile(input: str) // call function to write to file
+    }   // end horribleButtonPressed
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
