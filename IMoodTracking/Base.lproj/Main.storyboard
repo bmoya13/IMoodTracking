@@ -32,13 +32,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoodTrackerWide" translatesAutoresizingMaskIntoConstraints="NO" id="sLf-Xx-LcQ">
+                                <rect key="frame" x="57" y="154.5" width="300" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3ph-Oo-EIK"/>
+                                    <constraint firstAttribute="width" constant="300" id="VtO-ve-6zj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="sLf-Xx-LcQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ko-EK-0Pv"/>
                             <constraint firstItem="rKw-Za-Hyt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="L5E-vG-CtZ"/>
                             <constraint firstItem="rKw-Za-Hyt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wsg-hi-hO2"/>
                             <constraint firstItem="f44-w7-k4B" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Y4z-mP-yTy"/>
+                            <constraint firstItem="rKw-Za-Hyt" firstAttribute="top" secondItem="sLf-Xx-LcQ" secondAttribute="bottom" constant="30" id="gw5-Kl-qsi"/>
                             <constraint firstItem="f44-w7-k4B" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="y7y-cG-q52"/>
                         </constraints>
                     </view>
@@ -74,6 +83,9 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGreenColor"/>
                                 <state key="normal" title="Amazing"/>
+                                <connections>
+                                    <action selector="amazingButtonPressed:" destination="KTe-6R-s9J" eventType="touchUpInside" id="GDL-Xm-Xx1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25y-rh-F6M">
                                 <rect key="frame" x="132" y="489.5" width="150" height="30"/>
@@ -279,6 +291,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="MoodTrackerWide" width="2077" height="1212"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
