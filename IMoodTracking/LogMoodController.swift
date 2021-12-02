@@ -11,89 +11,67 @@ import UIKit
 struct Mood: Codable {
     var mood: String
     var time: String
+    static var numOfLogs: Int = 0
     
     init(moodInput: String, timeInput: String)
     {
         mood = moodInput
         time = timeInput
+        
     }
-}   // end Mood class
-
+    
+    static func incrementLogs() {
+        numOfLogs = numOfLogs + 1
+    }
+    
+    static func getLogCount() -> Int {
+        return numOfLogs
+    }
+    
+}   // end Mood struct
 class LogMoodController: UIViewController {
 
     @IBAction func amazingButtonPressed(_ sender: Any) {
-        print("Test")
+        Mood.incrementLogs()
+        saveCounter()
+        createMoodLog(description: "Amazing")
         
-        let moodLog = Mood(moodInput: "Happy", timeInput: getDate())
-        
-        do {
-            try UserDefaults.standard.setObject(moodLog, forKey: "dayMood")
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        do {
-            let moodOne = try UserDefaults.standard.getObject(forKey: "dayMood", castTo: Mood.self)
-            print(moodOne)
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        //print(moodLog.mood + ", " + moodLog.time)
-        
-        //let str = moodLog.mood + "," + moodLog.time
-        
-        //writeToFile(input: str) // call function to write to file
+        print(Mood.getLogCount())
         
     }   // end amazingButtonPressed
     
     @IBAction func goodButtonPressed(_ sender: Any) {
-        print("Test")
+        Mood.incrementLogs()
+        saveCounter()
+        createMoodLog(description: "Good")
         
-        var moodLog = Mood(moodInput: "Good", timeInput: getDate())
-        print(moodLog.mood + ", " + moodLog.time)
-        
-        let str = moodLog.mood + "," + moodLog.time
-        
-        writeToFile(input: str) // call function to write to file
+        print(Mood.getLogCount())
         
     }   // end goodButtonPressed
     
     @IBAction func SoSoButtonPressed(_ sender: Any) {
+        Mood.incrementLogs()
+        saveCounter()
+        createMoodLog(description: "So-so")
         
-        print("Test")
-        
-        var moodLog = Mood(moodInput: "So-So", timeInput: getDate())
-        print(moodLog.mood + ", " + moodLog.time)
-        
-        let str = moodLog.mood + "," + moodLog.time
-        
-        writeToFile(input: str) // call function to write to file
+        print(Mood.getLogCount())
     }   // end SoSoButtonPressed
     
     @IBAction func mehButtonPressed(_ sender: Any) {
+        Mood.incrementLogs()
+        saveCounter()
+        createMoodLog(description: "Meh")
         
-        print("Test")
-        
-        var moodLog = Mood(moodInput: "Meh", timeInput: getDate())
-        print(moodLog.mood + ", " + moodLog.time)
-        
-        let str = moodLog.mood + "," + moodLog.time
-        
-        writeToFile(input: str) // call function to write to file
+        print(Mood.getLogCount)
     }   // end mehButtonPressed
     
     
     @IBAction func horribleButtonPressed(_ sender: Any) {
+        Mood.incrementLogs()
+        saveCounter()
+        createMoodLog(description: "Horrible")
         
-        print("Test")
-        
-        var moodLog = Mood(moodInput: "Horrible", timeInput: getDate())
-        print(moodLog.mood + ", " + moodLog.time)
-        
-        let str = moodLog.mood + "," + moodLog.time
-        
-        writeToFile(input: str) // call function to write to file
+        print(Mood.getLogCount)
     }   // end horribleButtonPressed
     
     
@@ -109,25 +87,34 @@ class LogMoodController: UIViewController {
         format.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let formattedDate = format.string(from: date)
         return formattedDate
-    }   // end getDate
+    }   // end getDate function
     
-    func writeToFile(input: String) {
-        
-        //let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        //let fileURL = URL(fileURLWithPath: "moodDatebase", relativeTo: path).appendingPathExtension("txt")
-        
-        let fileURL = Bundle.main.url(forResource: "moodDatabase", withExtension: "txt")!
+    func saveCounter() {
         do {
-            if let fileUpdater = try? FileHandle(forUpdating: fileURL) {
-                      fileUpdater.seekToEndOfFile()
-                      fileUpdater.write(input.data(using: .utf8)!)
-                      fileUpdater.closeFile()
-                }
-            
-            //try str.write(toFile: filePath, atomically: true, encoding: String.Encoding.utf8)
-            print("File saved")
+            try UserDefaults.standard.set(Mood.getLogCount(), forKey: "logCounter")
+        } catch {
+            print(error.localizedDescription)
         }
-    } // end writeToFile
+    } // end saveCounter function
+    
+    func createMoodLog(description: String) {
+        
+        let mood = Mood(moodInput: description, timeInput: getDate())
+        
+        
+        do {
+            try UserDefaults.standard.setObject(mood, forKey: String(Mood.getLogCount()) + "Mood")
+        } catch {
+            print(error.localizedDescription)
+        }
+        do {
+            let mood = try UserDefaults.standard.getObject(forKey: String(Mood.getLogCount()) + "Mood", castTo: Mood.self)
+            print(mood)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+    }   // end createMoodLog function
     
 }
 
