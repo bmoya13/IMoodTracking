@@ -62,7 +62,7 @@ class LogMoodController: UIViewController {
         saveCounter()
         createMoodLog(description: "Meh")
         
-        print(Mood.getLogCount)
+        print(Mood.getLogCount())
     }   // end mehButtonPressed
     
     
@@ -71,7 +71,7 @@ class LogMoodController: UIViewController {
         saveCounter()
         createMoodLog(description: "Horrible")
         
-        print(Mood.getLogCount)
+        print(Mood.getLogCount())
     }   // end horribleButtonPressed
     
     
