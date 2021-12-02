@@ -9,6 +9,10 @@ import UIKit
 
 class ViewMoodController: UIViewController {
     
+    @IBAction func backMenu(_ sender: Any) {
+        self.performSegue(withIdentifier: "backMenuSegue", sender: self)
+    }
+    
     var count = UserDefaults.standard.integer(forKey: "logCounter")
     
     func getMood(index: Int) -> String {

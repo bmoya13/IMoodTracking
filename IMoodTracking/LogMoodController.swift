@@ -31,6 +31,10 @@ struct Mood: Codable {
 }   // end Mood struct
 class LogMoodController: UIViewController {
 
+    @IBAction func backMoodButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "backMoodSegue", sender: self)
+    }
+    
     @IBAction func amazingButtonPressed(_ sender: Any) {
         Mood.incrementLogs()
         saveCounter()
