@@ -23,6 +23,11 @@ class MainMenuController: UIViewController {
         self.performSegue(withIdentifier: "tipScreenSegue", sender: self)
     }
     
+    @IBAction func viewMoodButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "viewMoodSegue", sender: self)
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

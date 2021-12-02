@@ -21,6 +21,7 @@
 		0EA2C16D275887AD00ACF881 /* NotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2C16C275887AD00ACF881 /* NotifManager.swift */; };
 		7CA6C4432755A40200C90DDB /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6C4422755A40200C90DDB /* MainMenuController.swift */; };
 		7CBD86D22755F5A8006B27D4 /* TipScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD86D12755F5A8006B27D4 /* TipScreenController.swift */; };
+		7CC9D7AF2758A5AE004B5060 /* ViewMoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC9D7AE2758A5AE004B5060 /* ViewMoodController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		0EA2C16C275887AD00ACF881 /* NotifManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifManager.swift; sourceTree = "<group>"; };
 		7CA6C4422755A40200C90DDB /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
 		7CBD86D12755F5A8006B27D4 /* TipScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipScreenController.swift; sourceTree = "<group>"; };
+		7CC9D7AE2758A5AE004B5060 /* ViewMoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMoodController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				0E6E252E27557E1E00114368 /* LaunchScreen.storyboard */,
 				0E6E253127557E1E00114368 /* Info.plist */,
 				7CA6C4422755A40200C90DDB /* MainMenuController.swift */,
+				7CC9D7AE2758A5AE004B5060 /* ViewMoodController.swift */,
 				0E6E2553275587B900114368 /* LogMoodController.swift */,
 				0E4F98D82758447D00CF2229 /* UserDef+.swift */,
 				0EA2C16A275886F600ACF881 /* WakingHrsController.swift */,
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6E2554275587B900114368 /* LogMoodController.swift in Sources */,
+				7CC9D7AF2758A5AE004B5060 /* ViewMoodController.swift in Sources */,
 				0E6E252827557E1C00114368 /* HomeViewController.swift in Sources */,
 				0E4F98D92758447D00CF2229 /* UserDef+.swift in Sources */,
 				0E6E252427557E1C00114368 /* AppDelegate.swift in Sources */,
