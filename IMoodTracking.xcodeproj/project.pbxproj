@@ -17,6 +17,8 @@
 		0E6E253B27557E1E00114368 /* IMoodTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6E253A27557E1E00114368 /* IMoodTrackingTests.swift */; };
 		0E6E254627557E1E00114368 /* IMoodTrackingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6E254527557E1E00114368 /* IMoodTrackingUITests.swift */; };
 		0E6E2554275587B900114368 /* LogMoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6E2553275587B900114368 /* LogMoodController.swift */; };
+		0EA2C16B275886F600ACF881 /* WakingHrsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2C16A275886F600ACF881 /* WakingHrsController.swift */; };
+		0EA2C16D275887AD00ACF881 /* NotifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA2C16C275887AD00ACF881 /* NotifManager.swift */; };
 		7CA6C4432755A40200C90DDB /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA6C4422755A40200C90DDB /* MainMenuController.swift */; };
 		7CBD86D22755F5A8006B27D4 /* TipScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD86D12755F5A8006B27D4 /* TipScreenController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +57,8 @@
 		0E6E254527557E1E00114368 /* IMoodTrackingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMoodTrackingUITests.swift; sourceTree = "<group>"; };
 		0E6E254727557E1E00114368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E6E2553275587B900114368 /* LogMoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMoodController.swift; sourceTree = "<group>"; };
+		0EA2C16A275886F600ACF881 /* WakingHrsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakingHrsController.swift; sourceTree = "<group>"; };
+		0EA2C16C275887AD00ACF881 /* NotifManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifManager.swift; sourceTree = "<group>"; };
 		7CA6C4422755A40200C90DDB /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
 		7CBD86D12755F5A8006B27D4 /* TipScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipScreenController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +122,8 @@
 				7CA6C4422755A40200C90DDB /* MainMenuController.swift */,
 				0E6E2553275587B900114368 /* LogMoodController.swift */,
 				0E4F98D82758447D00CF2229 /* UserDef+.swift */,
+				0EA2C16A275886F600ACF881 /* WakingHrsController.swift */,
+				0EA2C16C275887AD00ACF881 /* NotifManager.swift */,
 			);
 			path = IMoodTracking;
 			sourceTree = "<group>";
@@ -275,7 +281,9 @@
 				0E4F98D92758447D00CF2229 /* UserDef+.swift in Sources */,
 				0E6E252427557E1C00114368 /* AppDelegate.swift in Sources */,
 				0E6E252627557E1C00114368 /* SceneDelegate.swift in Sources */,
+				0EA2C16D275887AD00ACF881 /* NotifManager.swift in Sources */,
 				7CA6C4432755A40200C90DDB /* MainMenuController.swift in Sources */,
+				0EA2C16B275886F600ACF881 /* WakingHrsController.swift in Sources */,
 				7CBD86D22755F5A8006B27D4 /* TipScreenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

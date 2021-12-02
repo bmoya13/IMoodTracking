@@ -9,6 +9,10 @@ import UIKit
 
 class MainMenuController: UIViewController {
     
+    @IBAction func wakingHoursButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "wakingHoursSegue", sender: self)
+    }
+    
     @IBAction func logMoodButton(_ sender: Any) {
         
         self.performSegue(withIdentifier: "logMoodSegue", sender: self)

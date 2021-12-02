@@ -213,6 +213,13 @@
                                     <action selector="tipScreenButton:" destination="mJn-wt-bnM" eventType="touchUpInside" id="pKS-oJ-52N"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQU-Ax-kFg">
+                                <rect key="frame" x="159" y="506" width="96" height="30"/>
+                                <state key="normal" title="Waking Hours"/>
+                                <connections>
+                                    <action selector="wakingHoursButton:" destination="mJn-wt-bnM" eventType="touchUpInside" id="yRu-1x-0Y8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NNh-Z7-Z6b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -220,11 +227,13 @@
                             <constraint firstItem="iWi-n3-qkX" firstAttribute="centerX" secondItem="gpK-DU-YLA" secondAttribute="centerX" id="5ZI-22-lva"/>
                             <constraint firstItem="foT-U5-7Hh" firstAttribute="top" secondItem="iWi-n3-qkX" secondAttribute="bottom" constant="30" id="6XE-Re-Vbi"/>
                             <constraint firstItem="oRn-ou-CiZ" firstAttribute="centerY" secondItem="gpK-DU-YLA" secondAttribute="centerY" constant="-200" id="Cmb-Xt-6KG"/>
+                            <constraint firstItem="dQU-Ax-kFg" firstAttribute="centerY" secondItem="gpK-DU-YLA" secondAttribute="centerY" constant="100" id="H3f-5a-Qda"/>
                             <constraint firstItem="3jv-9D-8TN" firstAttribute="top" secondItem="oRn-ou-CiZ" secondAttribute="bottom" constant="20" id="HQJ-1n-DNb"/>
                             <constraint firstItem="oRn-ou-CiZ" firstAttribute="centerX" secondItem="gpK-DU-YLA" secondAttribute="centerX" id="Ir1-hU-lzs"/>
                             <constraint firstItem="foT-U5-7Hh" firstAttribute="centerX" secondItem="gpK-DU-YLA" secondAttribute="centerX" id="Kg6-wR-EeH"/>
                             <constraint firstItem="Twl-EX-oHM" firstAttribute="top" secondItem="foT-U5-7Hh" secondAttribute="bottom" constant="30" id="UDm-hD-iSz"/>
                             <constraint firstItem="iWi-n3-qkX" firstAttribute="top" secondItem="3jv-9D-8TN" secondAttribute="bottom" constant="30" id="bP2-Jg-DkZ"/>
+                            <constraint firstItem="dQU-Ax-kFg" firstAttribute="centerX" secondItem="NNh-Z7-Z6b" secondAttribute="centerX" id="bqo-KX-r1U"/>
                             <constraint firstItem="3jv-9D-8TN" firstAttribute="centerX" secondItem="gpK-DU-YLA" secondAttribute="centerX" id="cRC-cW-0WP"/>
                             <constraint firstItem="Twl-EX-oHM" firstAttribute="centerX" secondItem="gpK-DU-YLA" secondAttribute="centerX" id="lLb-RX-sDI"/>
                         </constraints>
@@ -233,11 +242,69 @@
                     <connections>
                         <segue destination="KTe-6R-s9J" kind="show" identifier="logMoodSegue" id="5yI-Pw-c7I"/>
                         <segue destination="RPD-tw-yhK" kind="show" identifier="tipScreenSegue" id="dxN-jv-hax"/>
+                        <segue destination="a7v-m3-VO8" kind="show" identifier="wakingHoursSegue" id="lyG-zO-GSd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WtS-qz-fMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="679.71014492753625" y="67.633928571428569"/>
+        </scene>
+        <!--Waking Hours Controller-->
+        <scene sceneID="20Y-4x-EXO">
+            <objects>
+                <viewController storyboardIdentifier="WakingHoursController" id="a7v-m3-VO8" customClass="WakingHoursController" customModule="IMoodTracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ka4-vE-pZt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="bu7-Lk-vTa" userLabel="Start Date Picker">
+                                <rect key="frame" x="0.0" y="162" width="414" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zNQ-yC-xB2" userLabel="End Date Picker">
+                                <rect key="frame" x="0.0" y="456" width="414" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-LN-7q5">
+                                <rect key="frame" x="290" y="56" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveWakingHours" destination="a7v-m3-VO8" eventType="touchUpInside" id="KW9-YQ-t0s"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLo-Fe-Ww9">
+                                <rect key="frame" x="19" y="360.5" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES4-Os-enR">
+                                <rect key="frame" x="15" y="85.5" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PR1-g6-ZbM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ES4-Os-enR" firstAttribute="centerY" secondItem="ka4-vE-pZt" secondAttribute="centerY" constant="-325" id="L3l-el-kOx"/>
+                            <constraint firstItem="iLo-Fe-Ww9" firstAttribute="centerY" secondItem="ka4-vE-pZt" secondAttribute="centerY" constant="-50" id="cBP-nZ-5U2"/>
+                            <constraint firstItem="ES4-Os-enR" firstAttribute="centerX" secondItem="ka4-vE-pZt" secondAttribute="centerX" constant="-150" id="dkC-wv-SO3"/>
+                            <constraint firstItem="iLo-Fe-Ww9" firstAttribute="centerX" secondItem="ka4-vE-pZt" secondAttribute="centerX" constant="-150" id="ljK-bs-kEW"/>
+                            <constraint firstItem="bhO-LN-7q5" firstAttribute="centerY" secondItem="ka4-vE-pZt" secondAttribute="centerY" constant="-350" id="lqx-yQ-d4V"/>
+                            <constraint firstItem="bhO-LN-7q5" firstAttribute="centerX" secondItem="ka4-vE-pZt" secondAttribute="centerX" constant="100" id="pjy-Of-oNT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KZv-gQ-EGF"/>
+                    <connections>
+                        <outlet property="endDatePicker" destination="zNQ-yC-xB2" id="W2G-3D-Wz1"/>
+                        <outlet property="startDatePicker" destination="bu7-Lk-vTa" id="0mP-YB-A9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nWk-Ju-NzJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-190" y="744"/>
         </scene>
         <!--Tip Screen Controller-->
         <scene sceneID="tzr-dW-Afu">
