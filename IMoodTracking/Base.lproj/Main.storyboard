@@ -94,6 +94,9 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemTealColor"/>
                                 <state key="normal" title="Good"/>
+                                <connections>
+                                    <action selector="goodButtonPressed:" destination="KTe-6R-s9J" eventType="touchUpInside" id="VxI-6Z-FFf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqb-Dw-pLW">
                                 <rect key="frame" x="132" y="527.5" width="150" height="30"/>
@@ -103,6 +106,9 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemYellowColor"/>
                                 <state key="normal" title="So-So"/>
+                                <connections>
+                                    <action selector="SoSoButtonPressed:" destination="KTe-6R-s9J" eventType="touchUpInside" id="66P-sm-r3M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7R-ow-SDd">
                                 <rect key="frame" x="132" y="565.5" width="150" height="30"/>
@@ -112,6 +118,9 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Meh"/>
+                                <connections>
+                                    <action selector="mehButtonPressed:" destination="KTe-6R-s9J" eventType="touchUpInside" id="Dk0-kb-Iqw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Moody Here!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIa-Qi-NSy">
                                 <rect key="frame" x="118.5" y="356.5" width="177" height="29"/>
@@ -127,6 +136,9 @@
                                 </constraints>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <state key="normal" title="Horrible"/>
+                                <connections>
+                                    <action selector="horribleButtonPressed:" destination="KTe-6R-s9J" eventType="touchUpInside" id="apJ-Vy-oAh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xsc-Vb-fZB"/>
