@@ -142,7 +142,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RS-rx-rwR">
-                                <rect key="frame" x="190" y="94" width="34" height="30"/>
+                                <rect key="frame" x="20" y="49" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backMoodButton:" destination="KTe-6R-s9J" eventType="touchUpInside" id="RgT-Y0-7NZ"/>
@@ -156,11 +156,11 @@
                             <constraint firstItem="MX5-sx-szf" firstAttribute="centerX" secondItem="oRJ-8A-K3y" secondAttribute="centerX" id="2xY-gK-Rtg"/>
                             <constraint firstItem="nM7-xW-HON" firstAttribute="centerX" secondItem="oRJ-8A-K3y" secondAttribute="centerX" id="4ZP-qm-7xx"/>
                             <constraint firstItem="tqb-Dw-pLW" firstAttribute="top" secondItem="25y-rh-F6M" secondAttribute="bottom" constant="8" id="E2p-HM-it2"/>
-                            <constraint firstItem="1RS-rx-rwR" firstAttribute="top" secondItem="oRJ-8A-K3y" secondAttribute="topMargin" constant="50" id="Eki-cQ-Dxm"/>
+                            <constraint firstItem="1RS-rx-rwR" firstAttribute="top" secondItem="oRJ-8A-K3y" secondAttribute="topMargin" constant="5" id="Eki-cQ-Dxm"/>
                             <constraint firstItem="tqb-Dw-pLW" firstAttribute="centerX" secondItem="oRJ-8A-K3y" secondAttribute="centerX" id="FNA-b1-jCT"/>
+                            <constraint firstItem="1RS-rx-rwR" firstAttribute="leading" secondItem="xsc-Vb-fZB" secondAttribute="leading" constant="20" id="Opa-N1-4Tc"/>
                             <constraint firstItem="25y-rh-F6M" firstAttribute="top" secondItem="MX5-sx-szf" secondAttribute="bottom" constant="8" id="SOg-p5-Wat"/>
                             <constraint firstItem="25y-rh-F6M" firstAttribute="centerX" secondItem="oRJ-8A-K3y" secondAttribute="centerX" id="UbD-Ga-1S3"/>
-                            <constraint firstItem="1RS-rx-rwR" firstAttribute="centerX" secondItem="oRJ-8A-K3y" secondAttribute="centerX" id="XOd-Qd-SUf"/>
                             <constraint firstItem="s7R-ow-SDd" firstAttribute="top" secondItem="tqb-Dw-pLW" secondAttribute="bottom" constant="8" id="cSf-B0-kgI"/>
                             <constraint firstItem="pIa-Qi-NSy" firstAttribute="centerX" secondItem="oRJ-8A-K3y" secondAttribute="centerX" id="cfE-uO-ca4"/>
                             <constraint firstItem="pIa-Qi-NSy" firstAttribute="centerY" secondItem="oRJ-8A-K3y" secondAttribute="centerY" constant="-50" id="cuk-eL-eYl"/>
@@ -467,7 +467,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bT-TM-muO">
-                                <rect key="frame" x="190" y="524" width="34" height="30"/>
+                                <rect key="frame" x="20" y="49" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backMenu:" destination="u73-Xb-FGp" eventType="touchUpInside" id="KfQ-vT-Jwx"/>
@@ -479,6 +479,7 @@
                         <constraints>
                             <constraint firstItem="7fg-Jn-6uO" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="8zG-uQ-htf"/>
                             <constraint firstItem="7fg-Jn-6uO" firstAttribute="top" secondItem="xRn-RA-UF5" secondAttribute="bottom" constant="10" id="9z4-Eo-tdi"/>
+                            <constraint firstItem="6bT-TM-muO" firstAttribute="leading" secondItem="hAF-t9-ssq" secondAttribute="leading" constant="20" id="Aer-wF-Dh3"/>
                             <constraint firstItem="9gk-5S-5gd" firstAttribute="top" secondItem="I9W-wT-6VU" secondAttribute="bottom" constant="10" id="B0l-LW-0ek"/>
                             <constraint firstItem="gTA-C4-1ur" firstAttribute="top" secondItem="7fg-Jn-6uO" secondAttribute="bottom" constant="10" id="ChM-he-YUk"/>
                             <constraint firstItem="XVE-Fi-HDe" firstAttribute="top" secondItem="9gk-5S-5gd" secondAttribute="bottom" constant="10" id="IFy-vp-I36"/>
@@ -491,14 +492,13 @@
                             <constraint firstItem="XVE-Fi-HDe" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="ddd-0M-Sig"/>
                             <constraint firstItem="ay8-oV-JQp" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="fkK-6I-QJe"/>
                             <constraint firstItem="xRn-RA-UF5" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="g2Z-Ve-h4t"/>
-                            <constraint firstItem="6bT-TM-muO" firstAttribute="top" secondItem="gTA-C4-1ur" secondAttribute="bottom" constant="40" id="jgN-7a-qvd"/>
-                            <constraint firstItem="6bT-TM-muO" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="lR4-tk-EA9"/>
                             <constraint firstItem="ay8-oV-JQp" firstAttribute="top" secondItem="Bhj-vX-tj8" secondAttribute="bottom" constant="30" id="nZx-8K-P3v"/>
                             <constraint firstItem="gTA-C4-1ur" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="oCb-pJ-YpL"/>
                             <constraint firstItem="I9W-wT-6VU" firstAttribute="top" secondItem="jpR-MM-YHJ" secondAttribute="bottom" constant="10" id="oct-Xs-j0K"/>
                             <constraint firstItem="aUG-qm-1Uh" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="sI1-f3-xRZ"/>
                             <constraint firstItem="aUG-qm-1Uh" firstAttribute="top" secondItem="ay8-oV-JQp" secondAttribute="bottom" constant="10" id="u2n-hh-whK"/>
                             <constraint firstItem="jpR-MM-YHJ" firstAttribute="top" secondItem="aUG-qm-1Uh" secondAttribute="bottom" constant="10" id="uxd-cl-jqd"/>
+                            <constraint firstItem="6bT-TM-muO" firstAttribute="top" secondItem="hAF-t9-ssq" secondAttribute="top" constant="5" id="vVJ-vq-HBD"/>
                             <constraint firstItem="I9W-wT-6VU" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="xIS-ue-771"/>
                             <constraint firstItem="jpR-MM-YHJ" firstAttribute="centerX" secondItem="d1T-3B-eYf" secondAttribute="centerX" id="xPq-xN-fu1"/>
                         </constraints>
@@ -524,7 +524,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l30-e5-vlg"/>
+        <segue reference="znj-Lr-VnN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="MoodTrackerWide" width="2077" height="1212"/>
