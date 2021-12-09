@@ -38,8 +38,8 @@ Since these are stored as UserDefaults, the mood entries will be stored and save
 ### Set Waking Hours
 
 In this feature, users can set the time they wake up in the morning as well as the time they head to bed. These values
-will be saved and used to send notifications to log their mood throughout the day. At least 5 notifications will be sent 
-throughout the day for reminders. Their waking hours can be changed at any time.
+will be saved and used to send notifications to log their mood throughout the day. By default, 5 notifications will be sent 
+throughout the day for reminders. This can be adjusted through the code or can be implemented as an additional feature in the future. Their waking hours can be changed at any time.
 
 ### Mood Improvement Tips
 
