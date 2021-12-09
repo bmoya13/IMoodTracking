@@ -27,22 +27,21 @@ Since this is an iOS app created in XCode, in order to get it running and test f
 From the main menu, users can choose to input their mood at any time of day.
 They are given 5 options to choose from: Amazing, Good, So-So, Bad, or Horrible.
 Pressing one of these buttons will save the choice data as well as a timestamp to know when the button was pressed.
-This information will be avaiable for the user to see, saved to the app, in the next feature.
 
 ### View Log
 
 Choosing this option on the main menu allows the user to view a log of their recently entered moods and a timestamp.
-This log will show the last 10 entries to the mood tracker. Once the user enters more, the new entries replace the oldest ones.
+This log will show the last 10 entries with logged date and timestamps to the mood tracker. Once the user enters more, the new entries replace the oldest ones.
 Since these are stored as UserDefaults, the mood entries will be stored and saved upon startup.
 
 ### Set Waking Hours
 
 In this feature, users can set the time they wake up in the morning as well as the time they head to bed. These values
-will be saved and used to send notifications to log their mood throughout the day. By default, 5 notifications will be sent 
-throughout the day for reminders. This can be adjusted through the code or can be implemented as an additional feature in the future. Their waking hours can be changed at any time.
+will be saved and used to send notifications for reminding users to log their mood throughout the day. By default, 5 notifications will be sent 
+during the set time window. This can be adjusted through the code or can be implemented as an additional feature in the future. Their waking hours can be changed at any time.
 
 ### Mood Improvement Tips
 
 Finally, this feature allows the user to view a quick Mood Improvement Tip, or general life tips, at any time. The tip
 given will be from a randomized choice of 15 from a switch statement, all of which are aimed at motivating the user throughout
-the day. Each time the slide is closed and opened again, the tip presented will be changed.
+the day.
